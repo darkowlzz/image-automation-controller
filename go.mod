@@ -21,8 +21,10 @@ require (
 	github.com/fluxcd/image-reflector-controller/api v0.22.0
 	github.com/fluxcd/pkg/apis/acl v0.1.0
 	github.com/fluxcd/pkg/apis/meta v0.16.0
+	github.com/fluxcd/pkg/git v0.6.1
+	github.com/fluxcd/pkg/git/libgit2 v0.2.0
 	github.com/fluxcd/pkg/gittestserver v0.7.0
-	github.com/fluxcd/pkg/runtime v0.19.0
+	github.com/fluxcd/pkg/runtime v0.19.1-0.20221004174449-09fc5a85dbff
 	github.com/fluxcd/pkg/ssh v0.6.0
 	github.com/fluxcd/source-controller v0.30.0
 	github.com/fluxcd/source-controller/api v0.30.0
@@ -63,6 +65,7 @@ require (
 	github.com/evanphx/json-patch/v5 v5.6.0 // indirect
 	github.com/fluxcd/gitkit v0.6.0 // indirect
 	github.com/fluxcd/pkg/gitutil v0.2.0 // indirect
+	github.com/fluxcd/pkg/http/transport v0.0.1 // indirect
 	github.com/fluxcd/pkg/version v0.2.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect
 	github.com/go-errors/errors v1.0.1 // indirect

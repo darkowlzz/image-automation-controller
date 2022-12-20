@@ -1266,6 +1266,19 @@ func waitForNewHead(g *WithT, repo *git2go.Repository, branch, preChangeHash str
 	}
 }
 
+func headCommit(repo *libgit2.Repository) (*libgit2.Commit, error) {
+	head, err := repo.Head()
+	if err != nil {
+		return nil, err
+	}
+	defer head.Free()
+	c, err := repo.LookupCommit(head.Target())
+	if err != nil {
+		return nil, err
+	}
+	return c, nil
+}
+
 func commitIdFromBranch(repo *git2go.Repository, branchName string) string {
 	commitId := ""
 	head, err := headFromBranch(repo, branchName)

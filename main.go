@@ -153,6 +153,7 @@ func main() {
 		EventRecorder:       eventRecorder,
 		Metrics:             metricsH,
 		NoCrossNamespaceRef: aclOptions.NoCrossNamespaceRefs,
+		ControllerName:      controllerName,
 	}).SetupWithManager(mgr, controllers.ImageUpdateAutomationReconcilerOptions{
 		MaxConcurrentReconciles: concurrent,
 		RateLimiter:             helper.GetRateLimiter(rateLimiterOptions),
